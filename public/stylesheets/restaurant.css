@@ -1,0 +1,1033 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.brightnessDim {
+    filter: brightness(30%) !important;
+}
+
+.sideNavbar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 40px;
+    height: 100vh;
+    width: 75vw;
+    background-color: white;
+    position: relative;
+    padding: 60px 0px 0 0px;
+    position: fixed;
+    z-index: 20;
+    right: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.sideNavbar>p {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.sideNavbar div {
+    border: 0px solid rgba(0, 0, 0, 0.392);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 17px;
+    padding: 0 15px 10px 15px;
+    border-bottom-width: 1px;
+}
+
+.sideNavbar button {
+    padding: 8px 2px;
+    color: red;
+    width: 70px;
+    margin-left: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(37 111 239);
+    color: white;
+}
+
+
+.header {
+    background-image: url('https://b.zmtcdn.com/data/o2_assets/d21d421672f053abdb9f48e7320ef6ac1724931538.jpeg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.navbar {
+    border: 0px solid rgba(255, 255, 255, 0.623);
+    border-bottom-width: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4919467787114846) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navbar #sideNavbar {
+    color: white;
+    display: none;
+}
+
+.navbar nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 130px;
+}
+
+.navbar nav ul:nth-child(1) {
+    position: relative;
+    list-style: none;
+}
+
+.navbar nav ul:nth-child(1) img {
+    width: 90px;
+    position: absolute;
+    top: -15px;
+    cursor: pointer;
+}
+
+.navbar button {
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: 1.5px solid rgb(255, 255, 255);
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.navbar nav ul:nth-child(1) img:nth-child(1) {
+    z-index: 1;
+}
+
+.navbar nav ul:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 17px;
+}
+
+
+
+#login-center {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+    display: none;
+    z-index: 5;
+}
+
+.login-form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 17px 22px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    animation: scale 0.15s linear 1;
+    margin: 0 22px;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.login-form #login-cut {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    cursor: pointer;
+}
+
+.login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form form input {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: rgb(253, 57, 73);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.zomatoBusiness {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0 20px 0;
+}
+
+.zomatoBusiness h1 {
+    font-size: 47px;
+    line-height: 28px;
+    /* color: rgb(37 111 239); */
+}
+
+.zomatoBusiness p {
+    font-size: 21px;
+    color: rgb(65, 74, 93);
+    text-align: center;
+}
+
+.zomatoBusiness p span {
+    font-weight: 600;
+}
+
+.zomatoBusiness button {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(37 111 239);
+    font-size: 21px;
+    font-weight: 500;
+    color: white;
+}
+
+.getStarted {
+    display: flex;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    width: 1020px;
+    margin: 40px auto;
+    padding: 0px 30px;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.getStarted>div:nth-child(1) {
+    padding: 35px 25px 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.getStarted>div:nth-child(1)>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.getStarted>div:nth-child(1)>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 20px 10px;
+    font-size: 13.5px;
+}
+
+.getStarted>div:nth-child(1)>div:nth-child(2)>div {
+    display: flex;
+    gap: 10px;
+}
+
+.getStarted>div:nth-child(1)>div:nth-child(2)>div p {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.914);
+}
+
+.getStarted>div:nth-child(1)>div:nth-child(2)>div .colorGrey {
+    font-weight: 600;
+    color: rgba(48, 46, 46, 0.374);
+}
+
+.getStarted>div:nth-child(1)>div:nth-child(2) span {
+    color: rgb(37 111 239);
+    padding-left: 5px;
+}
+
+.getStarted>div:nth-child(2) {
+    padding: 45px 0;
+}
+
+.getStarted video {
+    width: 330px;
+    border-radius: 15px;
+}
+
+.partnerWithZomato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 40px 0;
+    gap: 40px;
+}
+
+.partnerWithZomato>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partnerWithZomato>div:nth-child(1) p {
+    border: 1.5px solid rgba(84, 81, 81, 0.447);
+    width: 19vw;
+    height: 0px;
+}
+
+.partnerWithZomato>div:nth-child(2) {
+    display: flex;
+    text-align: center;
+    padding: 0 200px;
+    gap: 110px;
+}
+
+
+.partnerWithZomato>div:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(89, 99, 120);
+}
+
+.partnerWithZomato>div:nth-child(2) h2 {
+    color: rgb(65, 74, 93);
+}
+
+.partnerWithZomato>div:nth-child(2) img {
+    width: 65px;
+}
+
+
+.sucessStory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    background-color: rgb(237 244 255);
+    padding: 60px 0;
+}
+
+.sucessStory h1 {
+    font-size: 36px;
+}
+
+.sucessStory>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 200px;
+}
+
+.sucessStory>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 20px 15px 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.sucessStory>div>div>p {
+    border: 0px solid rgba(47, 47, 47, 0.162);
+    padding-bottom: 15px;
+    font-size: 13.5px;
+    color: rgb(89, 103, 56);
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    border-bottom-width: 1px
+}
+
+.sucessStory>div>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.sucessStory>div>div:nth-child(1)>div {
+    margin-top: 20px;
+}
+
+
+.sucessStory>div>div:nth-child(3)>div {
+    margin-top: 80px;
+}
+
+.sucessStory img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.sucessStory .colorGreyy {
+    color: rgb(145, 151, 166);
+    font-size: 13px;
+}
+
+.frequentlyAskedQuestions {
+    padding: 80px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frequentlyAskedQuestions h1 {
+    font-size: 36px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 200px 50px 200px;
+}
+
+.questions svg {
+    width: 28px !important;
+    color: rgba(55, 56, 56, 0.304);
+}
+
+.questions>div {
+    border: 1px solid rgba(55, 56, 56, 0.142);
+    ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.questions>div>p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(41, 49, 66);
+    padding: 22px 20px;
+}
+
+.questions>div .hide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    color: rgba(59, 60, 61, 0.874);
+    display: none;
+    padding: 0px 20px 25px 20px;
+}
+
+.questions>div .hide li {
+    padding-left: 10px;
+}
+
+.questions>div .hide .colorBlue {
+    color: rgb(0, 0, 255);
+    font-weight: normal;
+}
+
+.questions>div .hide span {
+    font-weight: 600;
+    color: rgba(59, 60, 61, 0.663);
+    font-size: 14px;
+}
+
+.contact {
+    background-color: #f4f6fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px 20px 80px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.822);
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact>div p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgba(93, 90, 90, 0.219);
+    padding: 15px 15px;
+    border-radius: 26px;
+    font-size: 14px;
+    color: rgba(0, 0, 255, 0.822);
+    background-color: white;
+}
+
+.contact img {
+    width: 90px;
+}
+
+.contact svg {
+    color: blue;
+    width: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px 40px 80px;
+    background-color: #f4f6fb;
+}
+
+.footer>div:nth-child(1) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 75px;
+}
+
+.footer>div:nth-child(1) div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer>div:nth-child(1) p {
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer>div:nth-child(1) div a {
+    text-decoration: none;
+    color: rgba(61, 59, 59, 0.842);
+    font-size: 15px;
+}
+
+.footer>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer>div:nth-child(2)>div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer>div:nth-child(2)>p {
+    font-weight: 600;
+}
+
+
+.footer>div:nth-child(2)>div img {
+    cursor: pointer;
+}
+
+.footerPara {
+    padding: 20px 80px 60px 80px;
+    background-color: #f4f6fb;
+}
+
+.footerPara p {
+    font-size: 12px;
+    color: rgb(105, 105, 105);
+    border: 0px solid rgba(70, 69, 69, 0.107);
+    padding: 30px 0 0px 0;
+    border-top-width: 1px;
+}
+
+@media only screen and (max-width:1220px) {
+    .getStarted {
+        width: 920px;
+    }
+
+    .partnerWithZomato>div:nth-child(1) p {
+        width: 16vw;
+    }
+
+    .partnerWithZomato>div:nth-child(2) {
+        padding: 0 140px;
+    }
+
+    .sucessStory>div {
+        padding: 0 140px;
+    }
+
+    .questions {
+        padding: 0 140px 50px 140px;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .navbar nav {
+        padding: 10px 52px;
+    }
+
+    .zomatoBusiness h1 {
+        font-size: 36px;
+        line-height: 15px;
+    }
+
+    .zomatoBusiness p {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .getStarted video {
+        width: 250px;
+    }
+
+    .getStarted {
+        width: 755px;
+    }
+
+    .getStarted>div:nth-child(1)>div:nth-child(2) {
+        font-size: 11.5px;
+    }
+
+    .getStarted>div:nth-child(1) {
+        padding: 20px 5px 20px 0;
+    }
+
+    .getStarted>div:nth-child(2) {
+        padding: 60px 0 0 0;
+    }
+
+    .getStarted>div:nth-child(1)>div:nth-child(2) span {
+        padding-left: 0px;
+    }
+
+    .zomatoBusiness button {
+        padding: 15px 34px;
+        font-size: 18px;
+    }
+
+    .footer>div:nth-child(2) :nth-child(2) img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .footer>div:nth-child(2)>div:nth-child(3) {
+        padding-top: 15px;
+    }
+
+    .footer>div:nth-child(2) :nth-child(3) img {
+        width: 110px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .contact {
+        padding: 60px 55px 20px 55px;
+    }
+
+    .footer {
+        padding: 20px 55px 40px 55px;
+    }
+
+    .footerPara {
+        padding: 20px 55px 60px 55px;
+    }
+
+    .partnerWithZomato>div:nth-child(2) {
+        padding: 0 85px;
+    }
+
+    .sucessStory>div {
+        padding: 0 85px;
+    }
+
+    .questions {
+        padding: 0 85px 50px 85px;
+    }
+
+    .partnerWithZomato h1 {
+        font-size: 25px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .partnerWithZomato>div:nth-child(1) {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .navbar nav ul:nth-child(2) #sideNavbar {
+        display: flex;
+    }
+
+    .navbar nav ul:nth-child(2) p {
+        display: none;
+    }
+
+    .navbar nav ul:nth-child(2) button {
+        display: none;
+    }
+
+    .navbar nav {
+        padding: 16px 20px;
+    }
+
+    .getStarted {
+        flex-direction: column-reverse;
+        width: 450px;
+        display: flex
+    }
+
+    .getStarted video {
+        width: 100%;
+    }
+
+    .getStarted>div:nth-child(1)>div:nth-child(2) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .getStarted>div:nth-child(2) {
+        padding: 25px 0 0 0;
+    }
+
+    .partnerWithZomato>div:nth-child(2) {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .sucessStory>div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sucessStory {
+        padding: 60px 60px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .footer>div:nth-child(1) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 50px 80px;
+    }
+
+    .footer>div:nth-child(2) :nth-child(3) img {
+        width: 180px;
+        height: 50px;
+    }
+
+    .footer>div:nth-child(2) :nth-child(2) img {
+        width: 27px;
+        height: 26px;
+    }
+
+    .contact {
+        background-color: #f4f6fb;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 60px 55px 35px 55px;
+    }
+
+    .footer>div:nth-child(2) {
+        align-items: flex-start;
+    }
+
+    .questions {
+        padding: 0 55px 50px 55px;
+    }
+
+    .partnerWithZomato {
+        padding: 40px 0 40px 0;
+    }
+
+    .footerPara {
+        padding: 20px 55px 40px 55px;
+    }
+
+}
+
+@media only screen and (max-width:650px) {
+    .sucessStory>div {
+        padding: 0 36px;
+    }
+
+    .sucessStory h1 {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .questions {
+        padding: 0 30px 50px 30px;
+    }
+
+    .contact {
+        padding: 60px 30px 35px 30px;
+    }
+
+    .footer {
+        padding: 20px 30px 40px 30px;
+    }
+
+    .footerPara {
+        padding: 20px 30px 60px 30px;
+    }
+
+    .partnerWithZomato>div:nth-child(1) {
+        gap: 0px;
+    }
+
+    .partnerWithZomato>div:nth-child(1) p {
+        width: 10vw;
+    }
+
+    .frequentlyAskedQuestions h1 {
+        font-size: 32px;
+    }
+
+    .frequentlyAskedQuestions {
+        padding: 50px 0 70px 0;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .footer>div:nth-child(2) :nth-child(3) img {
+        width: 140px;
+        height: 40px;
+    }
+
+    .footer>div:nth-child(2) :nth-child(2) img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .getStarted {
+        width: 400px;
+        padding: 0 15px;
+    }
+
+    .getStarted>div:nth-child(2) {
+        padding: 15px 0 0 0;
+    }
+
+    .sucessStory>div {
+        padding: 0 0px;
+    }
+
+    .contact>div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .partnerWithZomato h1 {
+        width: 295px;
+    }
+
+    .partnerWithZomato>div:nth-child(1) p {
+        width: 14vw;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    .getStarted {
+        width: 350px;
+    }
+
+    .getStarted h2 {
+        font-size: 20px;
+    }
+
+    .zomatoBusiness h1 {
+        font-size: 25px;
+        line-height: 0px;
+    }
+
+    .zomatoBusiness p {
+        font-size: 17px;
+    }
+
+    .partnerWithZomato>div:nth-child(2) h2 {
+        font-size: 20px;
+    }
+
+    .sucessStory h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .frequentlyAskedQuestions h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .questions>div>p {
+        font-size: 17px;
+        padding: 18px;
+    }
+
+    .questions {
+        gap: 30px;
+    }
+
+    .partnerWithZomato>div:nth-child(2) {
+        padding: 0 60px;
+    }
+
+    .sideNavbar {
+        width: 73vw;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .partnerWithZomato h1 {
+        width: 265px;
+    }
+
+    .sucessStory {
+        padding: 60px 30px;
+    }
+
+    .sideNavbar {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .getStarted {
+        width: 300px;
+    }
+
+    .partnerWithZomato h1 {
+        width: 200px;
+    }
+
+    .partnerWithZomato>div:nth-child(2) {
+        padding: 0 40px;
+    }
+
+    .zomatoBusiness {
+        padding: 90px 20px 20px 20px;
+    }
+
+    .zomatoBusiness p {
+        font-size: 16px;
+    }
+
+    .questions {
+        padding: 0 17px 50px 17px;
+    }
+
+    .contact {
+        padding: 60px 17px 35px 17px;
+    }
+
+    .footer {
+        padding: 20px 17px 40px 17px;
+    }
+
+    .footerPara {
+        padding: 20px 17px 60px 17px;
+    }
+
+    .sideNavbar {
+        width: 68vw;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .getStarted {
+        width: 255px;
+    }
+
+    .footer>div:nth-child(1) {
+        gap: 50px 15px;
+    }
+
+    .questions {
+        gap: 15px;
+    }
+
+    .zomatoBusiness h1 {
+        font-size: 22px;
+    }
+
+    .partnerWithZomato h1 {
+        font-size: 22px;
+    }
+
+    .partnerWithZomato h1 {
+        width: 175px;
+    }
+
+    .sucessStory h1 {
+        font-size: 22px;
+    }
+
+    .frequentlyAskedQuestions h1 {
+        font-size: 22px;
+    }
+}

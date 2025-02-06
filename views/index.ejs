@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato</title>
+  <link rel="stylesheet" href="../stylesheets/index.css">
+  <link rel="icon" href="https://www.zomato.com/favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <div class="side-Navbar">
+      <div>
+        <p id="sideNavbarCut">X</p>
+        <img class="zomato-img"
+          src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
+          alt="">
+      </div>
+      <div>
+        <a href="investor-relations">Investor Relations</a>
+        <a href="partner-with-us/new">Add Restaurant</a>
+        <li id="login">Log in</li>
+        <li id="signup">Sign up</li>
+      </div>
+    </div>
+
+    <div class="header">
+
+      <nav>
+        <ul>
+          <li id="sideNavbar">
+            <svg style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+          </li>
+          <a class="displayNone" href="mobile">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20"
+                aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip">
+                <title>download-app</title>
+                <path
+                  d="M18.5793 9.18939H16.5865H16.3199C15.7307 9.18939 15.2529 9.6672 15.2529 10.2583V10.3742C15.2529 10.9659 15.7307 11.444 16.3207 11.444H18.3156H18.5793C19.1696 11.444 19.6488 10.9639 19.6488 10.3742L19.6477 10.2569C19.6488 9.6672 19.1696 9.18939 18.5793 9.18939Z">
+                </path>
+                <path
+                  d="M18.5804 6.52262H18.1097V1.35122C18.1097 0.607964 17.5017 0 16.7582 0H7.84167C7.09841 0 6.49045 0.608249 6.49045 1.35122V5.06151C4.69196 6.07821 2.83696 7.14029 2.83296 7.14286C1.82597 7.5573 0.350586 8.89453 0.350586 12.0522C0.350586 12.3342 0.369139 12.5945 0.395113 12.846C0.40339 12.9197 0.412524 12.9904 0.422514 13.0615C0.448488 13.2462 0.481027 13.4229 0.519845 13.5907C0.533831 13.6506 0.544678 13.7131 0.559805 13.7705C0.612039 13.9646 0.67255 14.1467 0.740482 14.32C0.774733 14.4059 0.811839 14.4841 0.84923 14.5646C0.88919 14.6494 0.929436 14.7327 0.972535 14.8106C1.02249 14.9045 1.07244 14.995 1.12724 15.0809C1.14037 15.1009 1.15464 15.1192 1.16805 15.1394C2.46847 17.1052 4.8675 17.114 4.8675 17.114H6.49045V18.6494C6.49045 19.3918 7.09841 19.9997 7.84167 19.9997H16.7579C17.5014 19.9997 18.1094 19.3915 18.1094 18.6494V16.7767H18.3155V16.7755H18.5784C19.1695 16.7755 19.6487 16.2974 19.6476 15.7063L19.6487 15.5898C19.6476 14.9996 19.1695 14.5229 18.5792 14.5229H18.3155H16.5861H16.3195C15.7292 14.5229 15.2525 15.0007 15.2525 15.5907V15.7091C15.2525 16.2977 15.7304 16.7775 16.3203 16.7775H17.1692V17.5008H7.43036V7.79877C7.91959 7.48851 8.37256 7.18995 8.63088 6.98987C9.93957 5.97774 11.1818 5.17169 11.3499 4.4407C11.5688 3.49222 10.8407 2.69302 9.57765 3.34922C9.17976 3.55587 8.36315 4.00885 7.43036 4.53261V2.14129L17.1692 2.14271V6.52205H16.5861V6.52319H16.3209C15.7304 6.52319 15.2511 7.001 15.2511 7.59269V7.70858C15.2511 8.29999 15.7303 8.77665 16.3195 8.77665H16.5846H18.3141H18.5798C19.1695 8.77665 19.6476 8.29884 19.6476 7.70858V7.58955C19.6487 7.00186 19.1709 6.52262 18.5804 6.52262ZM12.2986 17.9752C12.6731 17.9752 12.9751 18.2774 12.9751 18.6511C12.9751 19.0255 12.6728 19.3267 12.2986 19.3267C11.9256 19.3267 11.6242 19.0247 11.6242 18.6511C11.6247 18.2786 11.927 17.9752 12.2986 17.9752ZM13.7266 1.30098H10.8735C10.7839 1.30098 10.7097 1.2282 10.7097 1.13829C10.7097 1.04695 10.7839 0.974169 10.8735 0.974169H13.7266C13.8163 0.974169 13.8893 1.04667 13.8893 1.13829C13.8893 1.22792 13.8163 1.30098 13.7266 1.30098Z">
+                </path>
+                <path
+                  d="M18.5788 11.8561H18.3151H16.3193C15.7302 11.8561 15.251 12.3353 15.251 12.9253V13.0423C15.251 13.6329 15.7291 14.1107 16.3193 14.1107H16.5845H18.3139H18.5782C19.1693 14.1107 19.646 13.6329 19.6474 13.0423V12.9253C19.6472 12.3353 19.1705 11.8561 18.5788 11.8561Z">
+                </path>
+              </svg>Get the App
+            </li>
+          </a>
+        </ul>
+        <ul class="displayNone">
+          <a href="investor-relations">Investor Relations</a>
+          <a href="partner-with-us/new">Add Restoreant</a>
+          <li id="log-in">Log in</li>
+          <li id="sign-up">Sign up</li>
+        </ul>
+      </nav>
+
+      <div>
+        <img id="zomatoImg" src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+        <h2>Discover the best food & drinks in Indore</h2>
+        <div class="inputSearch">
+          <div>
+            <svg id="location-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(236,96,96,1)">
+              <path
+                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z">
+              </path>
+            </svg>
+            <input type="text" name="location" id="area-location" placeholder="Indore">
+          </div>
+          <div>
+            <svg id="search-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+              </path>
+            </svg>
+            <input type="text" name="" id="search-restaurant" placeholder="Search for restaurant, cuisine or a dish">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div id="signup-center">
+    <div class="signup-form">
+      <h1>Sign up</h1>
+
+      <svg id="signup-cut" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="24" height="24" viewBox="0 0 20 20"
+        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fJjczH">
+        <title>cross</title>
+        <path
+          d="M11.42 10.42l3.54-3.54c0.38-0.4 0.38-1.040 0-1.42s-1.020-0.4-1.42 0l-3.54 3.54-3.54-3.54c-0.4-0.4-1.020-0.4-1.42 0s-0.38 1.020 0 1.42l3.54 3.54-3.54 3.54c-0.38 0.38-0.38 1.020 0 1.42 0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28l3.54-3.56 3.54 3.56c0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28c0.38-0.4 0.38-1.040 0-1.42l-3.54-3.54z">
+        </path>
+      </svg>
+
+      <form action="/register" method="post">
+
+        <div>
+          <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+
+        <div>
+          <input type="number" id="mobileNo" name="mobileNo" placeholder="Mobile No" required>
+        </div>
+
+        <div>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div>
+          <input type="text" id="gender" name="gender" placeholder="Gender" required>
+        </div>
+
+        <div>
+          <input type="text" id="location" name="location" placeholder="Location" required>
+        </div>
+
+        <div id="checkbox">
+          <input type="checkbox" name="" id="" required>
+          <p>I agree to Zomato's <span>Terms of Service, Privacy Policy</span> and <span>Content
+              Policies</span></p>
+        </div>
+
+        <div>
+          <button type="submit" id="Create-account">Create Account</button>
+        </div>
+
+      </form>
+
+      <p>Already have an account? <span id="LOGIN" style="cursor: pointer;">Log in</span></p>
+
+    </div>
+  </div>
+
+  <div id="login-center">
+    <div class="login-form">
+
+      <h1>Login Page</h1>
+
+      <svg id="login-cut" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="24" height="24" viewBox="0 0 20 20"
+        aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fJjczH">
+        <title>cross</title>
+        <path
+          d="M11.42 10.42l3.54-3.54c0.38-0.4 0.38-1.040 0-1.42s-1.020-0.4-1.42 0l-3.54 3.54-3.54-3.54c-0.4-0.4-1.020-0.4-1.42 0s-0.38 1.020 0 1.42l3.54 3.54-3.54 3.54c-0.38 0.38-0.38 1.020 0 1.42 0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28l3.54-3.56 3.54 3.56c0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28c0.38-0.4 0.38-1.040 0-1.42l-3.54-3.54z">
+        </path>
+      </svg>
+
+      <form action="/login" method="post">
+
+        <div>
+          <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+
+        <div>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div>
+          <button type="submit">Login</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+  <main>
+    <div class="main">
+      <div>
+        <img
+          src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="">
+        <div>
+          <p>Order Online</p>
+          <p>Stay home and order to your doorstep</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="">
+        <div>
+          <p>Dining</p>
+          <p>View the city's favourite dining venues</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://b.zmtcdn.com/data/o2_assets/371de657644f1b5818fcb5d83387c8c91722851940.png?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="">
+        <div>
+          <p>Live Events</p>
+          <p>Discover india's best events & concerts</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main2">
+      <div class="collections">
+        <h1>Collections</h1>
+        <div>
+          <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Indore, based on trends</p>
+          <p style="color: rgba(248, 50, 83, 0.66);">All collections in Indore</p>
+        </div>
+      </div>
+      <div class="bgimg">
+        <div>
+          <p>Best Luxury Dining Places</p>
+          <p>19 Places</p>
+        </div>
+        <div>
+          <p>Romantic Dining Places</p>
+          <p>16 Places</p>
+        </div>
+        <div>
+          <p>Great Cafes</p>
+          <p>26 Places</p>
+        </div>
+        <div>
+          <p>Local Favourite Places</p>
+          <p>13 Places</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading">
+      <h1>Popular localities in and around Indore</h1>
+    </div>
+
+    <div class="indore-locations">
+      <div>
+        <p>Vijay Nagar</p>
+        <p>1364 places</p>
+      </div>
+      <div>
+        <p>New Palasia</p>
+        <p>164 places</p>
+      </div>
+      <div>
+        <p>Old Palasia</p>
+        <p>246 places</p>
+      </div>
+      <div>
+        <p>Bhawar Kuan</p>
+        <p>482 places</p>
+      </div>
+      <div>
+        <p>Rau</p>
+        <p>183 places</p>
+      </div>
+      <div>
+        <p>By Pass Road(North)</p>
+        <p>206 places</p>
+      </div>
+      <div>
+        <p>South Tukoganj</p>
+        <p>67 places</p>
+      </div>
+      <div>
+        <p>Sapna Sangeeta</p>
+        <p>133 places</p>
+      </div>
+      <div class="hide-location">
+        <p>RNT Marg</p>
+        <p>62 places</p>
+      </div>
+      <div class="hide-location">
+        <p>By Pass Road (South)</p>
+        <p>164 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Sarwate Bus Stand</p>
+        <p>48 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Geeta Bhavan</p>
+        <p>107 places</p>
+      </div>
+      <div class="hide-location">
+        <p>YN Road</p>
+        <p>57 places</p>
+      </div>
+      <div class="hide-location">
+        <p>HIG-LIG</p>
+        <p>192 places</p>
+      </div>
+      <div class="hide-location">
+        <p>MR 10 Road</p>
+        <p>191 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Rajendra Nagar</p>
+        <p>185 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Khajrana</p>
+        <p>181 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Sudama Nagar</p>
+        <p>162 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Sarafa Bazaar</p>
+        <p>45 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Annapurna Road</p>
+        <p>132 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Press Complex</p>
+        <p>100 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Manik Bagh Road</p>
+        <p>85 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Chhavani</p>
+        <p>47 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Airport Road</p>
+        <p>221 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Gangwal Bus Stand</p>
+        <p>53 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Navlakha</p>
+        <p>77 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Ranjeet Hanuman</p>
+        <p>64 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Jail Road</p>
+        <p>46 places</p>
+      </div>
+      <div class="hide-location">
+        <p>Bombay Bazaar</p>
+        <p>29 places</p>
+      </div>
+      <div class="see-more">
+        <p>See more</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+          </path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="zomato-app">
+      <div>
+        <img id="phone-img" src="https://b.zmtcdn.com/data/o2_assets/ce5bc038a8a2d4f8f24465c8826182af1726501431.png"
+          alt="">
+      </div>
+      <div>
+        <h1>Get the Zomato app</h1>
+        <p>We will send you a link, open it on your phone to download the app</p>
+        <div class="email-phone">
+          <div>
+            <input type="radio" name="contact" id="Email">
+            <label for="Email">Email</label>
+          </div>
+          <div>
+            <input type="radio" name="contact" id="Phone">
+            <label for="Phone">Phone</label>
+          </div>
+        </div>
+        <div>
+          <input type="text" id="eml" placeholder="Email">
+          <button>Share App Link</button>
+        </div>
+
+        <p>Download app from</p>
+        <div>
+          <a href=""><img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+              alt=""></a>
+          <a href=""><img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+              alt=""></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="explore-options">
+      <p>Explore options near me</p>
+      <div>
+        <p id="cuisine">Popular Cuisines Near Me
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+            </path>
+          </svg>
+        </p>
+        <ul type="square" class="cuisines">
+          <li>Bakery near me</li>
+          <li>Beverages near me</li>
+          <li>Biryani near me</li>
+          <li>Burger near me</li>
+          <li>Cafe near me</li>
+          <li>Chinese near me</li>
+          <li>Coffee near me</li>
+          <li>Desserts near me</li>
+          <li>Ice Cream near me</li>
+          <li>Momos near me</li>
+          <li>Mughlai near me</li>
+          <li>North Indian near me</li>
+          <li>Pasta near me</li>
+          <li>Pizza near me</li>
+          <li>Rolls near me</li>
+          <li>Sandwich near me</li>
+          <li>Shake near me</li>
+          <li>South Indian near me</li>
+          <li>Street near me</li>
+          <li>Tea near me</li>
+        </ul>
+      </div>
+      <div>
+        <p id="restaurant">Popular Restaurant Types Near me<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+            </path>
+          </svg>
+        </p>
+        <ul class="restaurants">
+          <li>Bakeries near me</li>
+          <li>Bars near me</li>
+          <li>Beverage Shops near me</li>
+          <li>Bhojanalya near me</li>
+          <li>Cafés near me</li>
+          <li>Casual Dining near me</li>
+          <li>Clubs near me</li>
+          <li>Dessert Parlors near me</li>
+          <li>Dhabas near me</li>
+          <li>Fine Dining near me</li>
+          <li>Food Courts near me</li>
+          <li>Food Trucks near me</li>
+          <li>Kiosks near me</li>
+          <li>Paan Shop near me</li>
+          <li>Pubs near me</li>
+          <li>Quick Bites near me</li>
+          <li>Sweet Shops near me</li>
+        </ul>
+
+      </div>
+      <div>
+        <p id="restaurantChains">Top Restaurant Chains<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+            </path>
+          </svg>
+        </p>
+        <ul class="restaurant-chains">
+          <li>Burger King</li>
+          <li>Burger Singh</li>
+          <li>Domino's</li>
+          <li>KFC</li>
+          <li>McDonald's</li>
+          <li>Pizza Hut</li>
+          <li>WOW! Momo</li>
+        </ul>
+      </div>
+      <div>
+        <p id="allCities">Cities We Deliver To<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+              d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+            </path>
+          </svg>
+        </p>
+        <ul class="all-cities">
+          <li>Delhi NCR</li>
+          <li>Kolkata</li>
+          <li>Mumbai</li>
+          <li>Bengaluru</li>
+          <li>Pune</li>
+          <li>Hyderabad</li>
+          <li>Chennai</li>
+          <li>Lucknow</li>
+          <li>Kochi</li>
+          <li>Jaipur</li>
+          <li>Ahmedabad</li>
+          <li>Chandigarh</li>
+          <li>Goa</li>
+          <li>Indore</li>
+          <li>Gangtok</li>
+          <li>Nashik</li>
+          <li>Ooty</li>
+          <li>Shimla</li>
+          <li>Ludhiana</li>
+          <li>Guwahati</li>
+          <li>Amritsar</li>
+          <li>Kanpur</li>
+          <li>Allahabad</li>
+          <li>Aurangabad</li>
+          <li>Bhopal</li>
+          <li>Ranchi</li>
+          <li>Visakhapatnam</li>
+          <li>Bhubaneswar</li>
+          <li>Coimbatore</li>
+          <li>Mangalore</li>
+          <li>Vadodara</li>
+          <li>Nagpur</li>
+          <li>Agra</li>
+          <li>Dehradun</li>
+          <li>Mysore</li>
+          <li>Puducherry</li>
+          <li>Surat</li>
+          <li>Varanasi</li>
+          <li>Patna</li>
+          <li>Udaipur</li>
+          <li>Srinagar</li>
+          <li>Khajuraho</li>
+          <li>Neemrana</li>
+          <li>Cuttack</li>
+          <li>Trivandrum</li>
+          <li>Haridwar</li>
+          <li>Leh</li>
+          <li>Pushkar</li>
+          <li>Rajkot</li>
+          <li>Madurai</li>
+          <li>Kozhikode</li>
+          <li>Alappuzha</li>
+          <li>Thrissur</li>
+          <li>Manipal</li>
+          <li>Vijayawada</li>
+          <li>Jodhpur</li>
+          <li>Kota</li>
+          <li>Ajmer</li>
+          <li>Mussoorie</li>
+          <li>Rishikesh</li>
+          <li>Jalandhar</li>
+          <li>Jammu</li>
+          <li>Manali</li>
+          <li style="text-decoration: underline; color: black;">All delivery cities</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="setLanguage">
+      <img class="zomato-img"
+        src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
+        alt="">
+      <div>
+        <div id="lang">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfE2aaTiS34_NIKDcftmD-hQ7_h9UaPKcOHA&s"
+            alt="">
+          <p>India</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK">
+            <title>chevron-down</title>
+            <path
+              d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z">
+            </path>
+          </svg>
+        </div>
+        <div id="countryLang">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ">
+            <title>language-globe</title>
+            <path
+              d="M10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c-0.011-5.518-4.482-9.989-9.999-10h-0.001zM17.14 6.18h-3c-0.264-1.393-0.63-2.62-1.107-3.791l0.047 0.131c1.755 0.733 3.161 2.010 4.039 3.618l0.021 0.042zM18.1 10c-0.002 0.676-0.090 1.33-0.252 1.954l0.012-0.054h-3.44c0.059-0.57 0.092-1.231 0.092-1.9s-0.034-1.33-0.099-1.982l0.007 0.082h3.44c0.15 0.57 0.238 1.224 0.24 1.899v0.001zM1.9 10c0.002-0.676 0.090-1.33 0.252-1.954l-0.012 0.054h3.46c-0.059 0.57-0.092 1.231-0.092 1.9s0.034 1.33 0.099 1.982l-0.007-0.082h-3.46c-0.15-0.57-0.238-1.224-0.24-1.899v-0.001zM7.48 8.1h5.040c0.063 0.57 0.099 1.231 0.099 1.9s-0.036 1.33-0.107 1.981l0.007-0.081h-5.040c-0.063-0.57-0.099-1.231-0.099-1.9s0.036-1.33 0.107-1.981l-0.007 0.081zM10.76 1.9c0.603 1.228 1.106 2.657 1.436 4.152l0.024 0.128h-4.44c0.354-1.623 0.857-3.052 1.51-4.395l-0.050 0.115c0.24 0 0.5 0 0.76 0s0.48 0 0.76 0zM6.96 2.48c-0.445 1.051-0.825 2.291-1.079 3.576l-0.021 0.124h-3c0.899-1.65 2.305-2.927 4.007-3.64l0.053-0.020zM2.86 13.8h3c0.262 1.4 0.629 2.634 1.107 3.811l-0.047-0.131c-1.757-0.738-3.165-2.022-4.039-3.637l-0.021-0.043zM9.24 18.1c-0.605-1.234-1.108-2.67-1.437-4.172l-0.023-0.128h4.44c-0.352 1.63-0.855 3.066-1.51 4.415l0.050-0.115c-0.24 0-0.5 0-0.76 0s-0.48 0-0.76 0zM13.040 17.52c0.431-1.046 0.798-2.28 1.041-3.558l0.019-0.122h3.040c-0.902 1.642-2.308 2.912-4.006 3.62l-0.054 0.020z">
+            </path>
+          </svg>
+          <p>English</p>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="15" height="15" viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 jKmKoK">
+            <title>chevron-down</title>
+            <path
+              d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z">
+            </path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="setCountry">
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfE2aaTiS34_NIKDcftmD-hQ7_h9UaPKcOHA&s"
+            alt="">
+          <p>India</p>
+        </div>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAKlBMVEX///8AAAD/AAAAcy8AZQClSx4AdjClAAD/paWdQQAAZwD/q6z/ra2dAAAJrPcJAAABeElEQVR4nO3QxxHDQBDAMDnn/tt1EdyRHgd0QG7nWbf7ZSWbfYV9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX3J9L7X+7qS6X2fbS3D+55H9+zMvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+ZHjf9+ienQ3v+52WMr3vcXTQvuxL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS/7FJi0PjMcc7wAAAABJRU5ErkJggg=="
+            alt="">
+          <p>UAE</p>
+        </div>
+      </div>
+      <div class="setLang">
+        <p>English</p>
+        <p>Türkçe</p>
+        <p>हिंदी</p>
+        <p>Português (BR)</p>
+        <p>Indonesian</p>
+        <p>Português (PT)</p>
+        <p>Español</p>
+        <p>Čeština</p>
+        <p>Slovenčina</p>
+        <p>Polish</p>
+        <p>Italian</p>
+        <p>Vietnamese</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <p>About Zomato</p>
+        <a href="#">Who We Are</a>
+        <a href="#">Blog</a>
+        <a href="#">Work With Us</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Report Fraud</a>
+        <a href="#">Press Kit</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div>
+        <p>Zomaverse</p>
+        <a href="">Zomato</a>
+        <a href="">Blinkit</a>
+        <a href="">District</a>
+        <a href="">Feeding India</a>
+        <a href="">Hyperpure</a>
+        <a href="">Zomato Live</a>
+        <a href="">Zomaland</a>
+        <a href="">Weather Union</a>
+      </div>
+      <div>
+        <p>For Restaurants</p>
+        <a href="">Partner With Us</a>
+        <a href="">Apps For You</a>
+      </div>
+      <div>
+        <p>Learn More</p>
+        <a href="">Privacy</a>
+        <a href="">Security</a>
+        <a href="">Terms</a>
+      </div>
+      <div>
+        <p>Social links</p>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cvuzKA">
+            <path
+              d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM7.0625 8.375H4.75V15.4375H7.0625V8.375ZM7.25 6.1875C7.25 5.5 6.75 5 5.9375 5C5.125 5 4.5625 5.5 4.5625 6.1875C4.5625 6.875 5.0625 7.4375 5.875 7.4375C6.6875 7.4375 7.25 6.875 7.25 6.1875ZM15.5 11.375C15.5 9.1875 14.3125 8.1875 12.8125 8.1875C11.5625 8.1875 11 8.875 10.6875 9.375V8.375H8.375C8.375 9.0625 8.375 15.4375 8.375 15.4375H10.6875V11.5C10.6875 11.3125 10.6875 11.0625 10.75 10.9375C10.9375 10.5 11.3125 10.0625 11.9375 10.0625C12.75 10.0625 13.125 10.6875 13.125 11.6875V15.4375H15.4375C15.5 15.4375 15.5 11.375 15.5 11.375Z">
+            </path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cvuzKA">
+            <path
+              d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM10.1875 5C8.8125 5 8.625 5 8.0625 5C7.5 5.0625 7.125 5.125 6.8125 5.25C6.5 5.375 6.1875 5.5625 5.875 5.875C5.5625 6.1875 5.375 6.4375 5.25 6.8125C5.125 7.125 5 7.5 5 8.0625C5 8.625 5 8.75 5 10.1875C5 11.625 5 11.8125 5.0625 12.375C5.0625 12.9375 5.1875 13.3125 5.3125 13.625C5.4375 13.9375 5.625 14.25 5.9375 14.5625C6.1875 14.8125 6.5 15 6.875 15.1875C7.1875 15.3125 7.5625 15.4375 8.125 15.4375C8.6875 15.4375 8.875 15.5 10.25 15.5C11.6875 15.5 11.875 15.5 12.4375 15.4375C13 15.375 13.375 15.3125 13.6875 15.1875C14 15.0625 14.3125 14.875 14.625 14.5625C14.9375 14.25 15.125 14 15.25 13.625C15.375 13.3125 15.5 12.875 15.5 12.375C15.5625 11.8125 15.5625 11.625 15.5625 10.1875C15.5625 8.75 15.5625 8.625 15.5 8.0625C15.5 7.5 15.375 7.125 15.25 6.8125C15.125 6.4375 14.9375 6.1875 14.625 5.875C14.375 5.625 14.0625 5.4375 13.6875 5.25C13.375 5.125 12.9375 5.0625 12.4375 5C11.8125 5 11.625 5 10.1875 5ZM9.75 5.9375C9.875 5.9375 10.0625 5.9375 10.1875 5.9375C11.5625 5.9375 11.75 5.9375 12.3125 5.9375C12.8125 5.9375 13.0625 6.0625 13.25 6.125C13.5 6.25 13.6875 6.375 13.875 6.5C14.0625 6.625 14.1875 6.8125 14.25 7.125C14.3125 7.3125 14.4375 7.5625 14.4375 8.0625C14.5 8.625 14.5 8.8125 14.5 10.1875C14.5 11.5625 14.5 11.75 14.4375 12.3125C14.4375 12.8125 14.3125 13.125 14.25 13.3125C14.1875 13.5625 14.0625 13.6875 13.875 13.9375C13.6875 14.125 13.5 14.1875 13.25 14.3125C13.0625 14.375 12.8125 14.5 12.3125 14.5C11.75 14.5 11.5625 14.5625 10.1875 14.5625C8.8125 14.5625 8.625 14.5625 8.0625 14.5C7.5625 14.5 7.3125 14.375 7.125 14.3125C6.875 14.1875 6.6875 14.125 6.5 13.9375C6.3125 13.75 6.1875 13.5625 6.125 13.3125C6.0625 13.125 6 12.875 5.9375 12.3125C5.9375 11.75 5.9375 11.625 5.9375 10.1875C5.9375 8.8125 5.9375 8.625 5.9375 8.0625C6 7.5625 6.0625 7.3125 6.125 7.125C6.25 6.875 6.375 6.6875 6.5 6.5C6.625 6.3125 6.875 6.1875 7.125 6.125C7.3125 6.0625 7.5625 5.9375 8.0625 5.9375C8.5625 5.9375 8.75 5.9375 9.75 5.9375ZM13 6.8125C12.6875 6.8125 12.375 7.0625 12.375 7.4375C12.375 7.8125 12.625 8.0625 13 8.0625C13.375 8.0625 13.625 7.8125 13.625 7.4375C13.625 7.0625 13.3125 6.8125 13 6.8125ZM10.1875 7.5C8.75 7.5 7.5 8.6875 7.5 10.1875C7.5 11.6875 8.6875 12.875 10.1875 12.875C11.6875 12.875 12.875 11.6875 12.875 10.1875C12.875 8.6875 11.6875 7.5 10.1875 7.5ZM10.1875 8.4375C11.125 8.4375 11.9375 9.1875 11.9375 10.1875C11.9375 11.1875 11.1875 11.9375 10.1875 11.9375C9.25 11.9375 8.4375 11.1875 8.4375 10.1875C8.4375 9.1875 9.25 8.4375 10.1875 8.4375Z">
+            </path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cvuzKA">
+            <title>twitter-circle</title><svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+              text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+              clip-rule="evenodd" viewBox="0 0 512 512">
+              <path d="M256 0c141.385 0 256 114.615 256 256S397.385 512 256 512 0 397.385 0 256 114.615 0 256 0z">
+              </path>
+              <path fill="#fff" fill-rule="nonzero"
+                d="M318.64 157.549h33.401l-72.973 83.407 85.85 113.495h-67.222l-52.647-68.836-60.242 68.836h-33.423l78.052-89.212-82.354-107.69h68.924l47.59 62.917 55.044-62.917zm-11.724 176.908h18.51L205.95 176.493h-19.86l120.826 157.964z">
+              </path>
+            </svg>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cvuzKA">
+            <path
+              d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM15.1875 7.4375C15.0625 7 14.6875 6.625 14.25 6.5C13.4375 6.25 10.1875 6.25 10.1875 6.25C10.1875 6.25 6.9375 6.25 6.125 6.5C5.6875 6.625 5.3125 7 5.1875 7.4375C5 8.25 5 10 5 10C5 10 5 11.75 5.25 12.5625C5.375 13 5.75 13.375 6.1875 13.5C7 13.75 10.25 13.75 10.25 13.75C10.25 13.75 13.5 13.75 14.3125 13.5C14.75 13.375 15.125 13 15.25 12.5625C15.5 11.75 15.5 10 15.5 10C15.5 10 15.4375 8.25 15.1875 7.4375ZM9.25 11.75V8.5L11.875 10.125L9.25 11.75Z">
+            </path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="22" height="22" viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cvuzKA">
+            <path
+              d="M0 10C0 4.5 4.5 0 10 0C15.5 0 20 4.5 20 10C20 15.5 15.5 20 10 20C4.5 20 0 15.5 0 10ZM10.75 15.4375V10.1875H12.1875L12.375 8.375H10.75V7.5C10.75 7.0625 10.8125 6.8125 11.5 6.8125H12.375V5H10.9375C9.1875 5 8.625 5.875 8.625 7.3125V8.375H7.5V10.1875H8.5625V15.4375C8.5625 15.4375 10.75 15.4375 10.75 15.4375Z">
+            </path>
+          </svg>
+
+        </div>
+        <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+        <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+      </div>
+    </div>
+
+    <div class="foot-para">
+      <p> By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content
+        Policies. All trademarks are properties of their respective owners. 2008-2025 © Zomato™ Ltd. All rights
+        reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../javascripts/index.js"></script>
+
+</body>
+
+</html>

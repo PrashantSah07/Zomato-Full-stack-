@@ -1,0 +1,657 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.side-Navbar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100vh;
+    padding: 17px 20px 20px 20px;
+    gap: 70px;
+    font-size: 18px;
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    display: none;
+}
+
+.side-Navbar a {
+    text-decoration: none;
+    color: rgba(39, 37, 37, 0.671);
+}
+
+.side-Navbar li {
+    text-decoration: none;
+    color: rgba(39, 37, 37, 0.671);
+    cursor: pointer;
+}
+
+.side-Navbar div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-Navbar div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 10px;
+}
+
+.header {
+    border: 1px solid rgba(64, 63, 63, 0.175);
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 17px 340px;
+    align-items: center;
+}
+
+.zomato-img {
+    width: 130px;
+}
+
+.zomato-img:nth-child(1) {
+    width: 130px;
+    height: 27px;
+}
+
+.header #sideNavbar {
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.header p {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.586);
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.signup-form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 17px 22px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    animation: scale 0.15s linear 1;
+    margin: 0 22px;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form svg {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    cursor: pointer;
+}
+
+#signup-center {
+    width: 100vw;
+    position: absolute;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.signup-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signup-form form input {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.signup-form #checkbox {
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7px;
+    margin: 10px 0;
+}
+
+.signup-form #checkbox input {
+    width: 20px !important;
+}
+
+.signup-form span {
+    color: rgb(246, 30, 56);
+}
+
+.signup-form #Create-account {
+    background-color: rgb(253, 57, 73);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#logIn {
+    z-index: 5;
+}
+
+#login-center {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+    display: none;
+}
+
+.login-form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 17px 22px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    animation: scale 0.15s linear 1;
+    margin: 0 22px;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.login-form #login-cut {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    cursor: pointer;
+}
+
+.login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form form input {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: rgb(253, 57, 73);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.zomato-app {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 80px 0;
+}
+
+.zomato-app.dim {
+    filter: brightness(30%);
+}
+
+.zomato-app .email-phone {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    height: 30px;
+}
+
+.zomato-app .email-phone div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.zomato-app input {
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.zomato-app #eml {
+    width: 300px;
+    font-size: 17px;
+}
+
+.zomato-app button {
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(249, 40, 74);
+    cursor: pointer;
+}
+
+.zomato-app div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 17px;
+    padding: 40px 0;
+}
+
+.zomato-app div:nth-child(2) h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.zomato-app #phone-img {
+    width: 450px;
+}
+
+.zomato-app div img {
+    width: 140px;
+}
+
+.setLanguage {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 190px;
+    background-color: rgb(248 248 248);
+    position: relative;
+}
+
+.setLanguage>div {
+    display: flex;
+    gap: 15px;
+    padding: 0 0;
+}
+
+.setLanguage>div div {
+    border: 1px solid rgba(20, 20, 21, 0.768);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.setLanguage img {
+    width: 20px;
+    height: 17px;
+}
+
+.setLanguage .setCountry {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+    padding: 10px 60px 20px 15px;
+    position: absolute;
+    right: 280px;
+    top: -25px;
+    display: none;
+}
+
+.setLanguage .setCountry>div {
+    border-radius: 0;
+    display: flex;
+    gap: 15px;
+    border: none;
+    transition: 0.2s;
+}
+
+.setLanguage .setCountry>div:nth-child(1) {
+    padding-right: 40px;
+    background-color: rgb(215, 227, 253);
+}
+
+.setLanguage .setCountry>div:nth-child(2) {
+    padding-right: 40px;
+}
+
+.setLanguage .setCountry>div:nth-child(2):hover {
+    background-color: rgba(239, 235, 235, 0.74);
+}
+
+.setLanguage .setLang {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    gap: 0;
+    position: absolute;
+    top: -400px;
+    right: 200px;
+    background-color: white;
+    display: none;
+}
+
+.setLanguage .setLang p {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 0 0 0 5px;
+    cursor: pointer;
+}
+
+.setLanguage .setLang p:hover {
+    background-color: rgba(239, 235, 235, 0.74);
+}
+
+.setLanguage .setLang p:first-child {
+    background-color: rgb(215, 229, 252);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px 190px 50px 190px;
+    font-size: 18px;
+    background-color: rgb(248 248 248);
+}
+
+.footer a {
+    color: rgba(30, 29, 29, 0.711);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer img {
+    width: 135px;
+    cursor: pointer;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer div:nth-child(5) div {
+    display: flex;
+    flex-direction: row;
+}
+
+.foot-para {
+    background-color: rgb(248 248 248);
+}
+
+.foot-para p {
+    margin: 0 190px;
+    padding: 30px 0px;
+    color: rgba(45, 44, 44, 0.656);
+    font-size: 13.5px;
+    font-weight: 100;
+    border: 0px solid rgba(108, 108, 108, 0.432);
+    border-top-width: 1px;
+}
+
+@media only screen and (max-width:1405px) {
+    .signup-form {
+        top: -10px;
+    }
+
+    .header {
+        padding: 17px 250px;
+    }
+
+    .setLanguage {
+        padding: 50px 140px;
+    }
+
+    .footer {
+        padding: 0px 140px 50px 140px;
+    }
+
+    .foot-para p {
+        margin: 0 140px;
+    }
+
+    .setLanguage .setLang {
+        right: 142px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .header {
+        padding: 17px 50px;
+    }
+
+    .setLanguage {
+        padding: 50px 75px;
+    }
+
+    .footer {
+        padding: 0px 75px 50px 75px;
+    }
+
+    .foot-para p {
+        margin: 0 75px;
+    }
+
+    .setLanguage .setCountry {
+        right: 210px;
+    }
+
+    .setLanguage .setLang {
+        right: 78px;
+    }
+}
+
+
+@media only screen and (max-width:1000px) {
+    .setLanguage {
+        padding: 50px 22px;
+    }
+
+    .footer {
+        padding: 0px 22px 50px 22px;
+    }
+
+    .foot-para p {
+        margin: 0 22px;
+    }
+
+    .zomato-app {
+        padding: 0 22px;
+        align-items: center;
+    }
+
+    .zomato-app #phone-img {
+        width: 350px;
+    }
+
+    .setLanguage .setCountry {
+        right: 160px;
+    }
+
+    .setLanguage .setLang {
+        right: 25px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .zomato-app>div:nth-child(2) div:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .setLanguage {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .setLanguage .setCountry {
+        left: 155px;
+        width: 330px;
+        top: 38px;
+    }
+
+    .setLanguage .setLang {
+        left: 180px;
+        width: 155px;
+        top: -336px;
+    }
+}
+
+@media only screen and (max-width:765px) {
+    .header {
+        padding: 17px 15px;
+    }
+
+    .header div {
+        display: none;
+    }
+
+    .header #sideNavbar {
+        visibility: visible;
+    }
+
+    .zomato-app div:nth-child(2) h1 {
+        font-size: 32px;
+    }
+
+    .side-Navbar {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .zomato-app #phone-img {
+        width: 250px;
+    }
+
+    .zomato-app div:nth-child(2) {
+        padding: 40px 22px 40px 0;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .zomato-app #eml {
+        width: 285px;
+    }
+
+    .zomato-app p {
+        font-size: 15px;
+    }
+
+    .zomato-app div:nth-child(2) {
+        gap: 18px;
+    }
+
+    .zomato-app div:nth-child(2) h1 {
+        font-size: 27px;
+    }
+
+    .zomato-app #phone-img {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width:525px) {
+    .zomato-app #phone-img {
+        width: 185px;
+    }
+
+    .setLanguage .setCountry {
+        width: 275px;
+    }
+
+    .setLanguage .setLang {
+        left: 150px;
+    }
+}
+
+@media only screen and (max-width:490px) {
+    .zomato-app #phone-img {
+        display: none;
+    }
+
+    .zomato-app div:nth-child(2) {
+        padding: 40px 0px 40px 0;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .setLanguage .setCountry {
+        left: 21px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .zomato-app div img {
+        width: 130px;
+    }
+
+    .setLanguage .setLang {
+        left: 102px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}

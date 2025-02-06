@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a restaurant | Zomato</title>
+    <link rel="stylesheet" href="../stylesheets/restaurant.css">
+    <link rel="icon" href="https://www.zomato.com/favicon.ico">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="sideNavbar">
+            <p id="sideNavbarCut">X</p>
+            <div>
+                <p>Restaurant services hub</p>
+                <p>Contact us</p>
+            </div>
+            <button id="loginBtn">Login</button>
+        </div>
+        <div class="header">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <img src="https://b.zmtcdn.com/data/o2_assets/3ecd43d729cc8135698465d4c964340b1710920889.png"
+                            alt="">
+                        <img id="zomatoImg"
+                            src="https://b.zmtcdn.com/data/o2_assets/f7e17618f914e229ba638dd7b18ed3be1715148110.png"
+                            alt="">
+                    </ul>
+                    <ul>
+                        <p style="cursor: pointer;" id="needHelp">Need help? Call+91 97-38-38-38-38</p>
+                        <button id="login">Login</button>
+                        <svg id="sideNavbar" style="width: 25px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                        </svg>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="zomatoBusiness">
+                <h1>Partner with Zomato</h1>
+                <h1>and grow your business</h1>
+                <p><span>0% commission for 1st month!</span> Valid for new restaurant partners in select cities</p>
+                <a href=""><button>Register your restaurant</button></a>
+            </div>
+
+            <div class="getStarted">
+                <div>
+                    <div>
+                        <h2>Get Started - It only takes 10 minutes</h2>
+                        <p>Please keep these documents and details ready for a smooth sign-up</p>
+                    </div>
+                    <div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/checkmark-circle-02-solid-rounded.svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#41af21">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25C6.06294 1.25 1.25 6.06294 1.25 12ZM16.6757 8.26285C17.0828 8.63604 17.1103 9.26861 16.7372 9.67573L11.2372 15.6757C11.0528 15.8768 10.7944 15.9938 10.5217 15.9998C10.249 16.0057 9.98576 15.9 9.79289 15.7071L7.29289 13.2071C6.90237 12.8166 6.90237 12.1834 7.29289 11.7929C7.68342 11.4024 8.31658 11.4024 8.70711 11.7929L10.4686 13.5544L15.2628 8.32428C15.636 7.91716 16.2686 7.88966 16.6757 8.26285Z"
+                                    fill="#41af21"></path>
+                            </svg>
+                            <p>PAN card</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/checkmark-circle-02-solid-rounded.svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#41af21">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25C6.06294 1.25 1.25 6.06294 1.25 12ZM16.6757 8.26285C17.0828 8.63604 17.1103 9.26861 16.7372 9.67573L11.2372 15.6757C11.0528 15.8768 10.7944 15.9938 10.5217 15.9998C10.249 16.0057 9.98576 15.9 9.79289 15.7071L7.29289 13.2071C6.90237 12.8166 6.90237 12.1834 7.29289 11.7929C7.68342 11.4024 8.31658 11.4024 8.70711 11.7929L10.4686 13.5544L15.2628 8.32428C15.636 7.91716 16.2686 7.88966 16.6757 8.26285Z"
+                                    fill="#41af21"></path>
+                            </svg>
+                            <div>
+                                <p>GST number, if applicable</p>
+                                <p class="colorGrey">Require a GST?<span>Apply here</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/checkmark-circle-02-solid-rounded.svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#41af21">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25C6.06294 1.25 1.25 6.06294 1.25 12ZM16.6757 8.26285C17.0828 8.63604 17.1103 9.26861 16.7372 9.67573L11.2372 15.6757C11.0528 15.8768 10.7944 15.9938 10.5217 15.9998C10.249 16.0057 9.98576 15.9 9.79289 15.7071L7.29289 13.2071C6.90237 12.8166 6.90237 12.1834 7.29289 11.7929C7.68342 11.4024 8.31658 11.4024 8.70711 11.7929L10.4686 13.5544L15.2628 8.32428C15.636 7.91716 16.2686 7.88966 16.6757 8.26285Z"
+                                    fill="#41af21"></path>
+                            </svg>
+                            <div>
+                                <p>FSSAI license</p>
+                                <p class="colorGrey">Don't have a FSSAI license?<span>Apply here</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/checkmark-circle-02-solid-rounded.svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#41af21">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25C6.06294 1.25 1.25 6.06294 1.25 12ZM16.6757 8.26285C17.0828 8.63604 17.1103 9.26861 16.7372 9.67573L11.2372 15.6757C11.0528 15.8768 10.7944 15.9938 10.5217 15.9998C10.249 16.0057 9.98576 15.9 9.79289 15.7071L7.29289 13.2071C6.90237 12.8166 6.90237 12.1834 7.29289 11.7929C7.68342 11.4024 8.31658 11.4024 8.70711 11.7929L10.4686 13.5544L15.2628 8.32428C15.636 7.91716 16.2686 7.88966 16.6757 8.26285Z"
+                                    fill="#41af21"></path>
+                            </svg>
+                            <div>
+                                <p>Menu & profile food image</p>
+                                <p class="colorGrey">What is profile food image?<span>Refer here</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/checkmark-circle-02-solid-rounded.svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#41af21">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25C6.06294 1.25 1.25 6.06294 1.25 12ZM16.6757 8.26285C17.0828 8.63604 17.1103 9.26861 16.7372 9.67573L11.2372 15.6757C11.0528 15.8768 10.7944 15.9938 10.5217 15.9998C10.249 16.0057 9.98576 15.9 9.79289 15.7071L7.29289 13.2071C6.90237 12.8166 6.90237 12.1834 7.29289 11.7929C7.68342 11.4024 8.31658 11.4024 8.70711 11.7929L10.4686 13.5544L15.2628 8.32428C15.636 7.91716 16.2686 7.88966 16.6757 8.26285Z"
+                                    fill="#41af21"></path>
+                            </svg>
+                            <p>Bank account details</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div>
+                    <video src="https://b.zmtcdn.com/data/file_assets/5835a67ef0191da3b505988b3ff9a0141720502359.mp4"
+                        controls></video>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+
+        <div id="login-center">
+            <div class="login-form">
+
+                <h1>Login Page</h1>
+
+                <svg id="login-cut" xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="24" height="24"
+                    viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img"
+                    class="sc-rbbb40-0 fJjczH">
+                    <title>cross</title>
+                    <path
+                        d="M11.42 10.42l3.54-3.54c0.38-0.4 0.38-1.040 0-1.42s-1.020-0.4-1.42 0l-3.54 3.54-3.54-3.54c-0.4-0.4-1.020-0.4-1.42 0s-0.38 1.020 0 1.42l3.54 3.54-3.54 3.54c-0.38 0.38-0.38 1.020 0 1.42 0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28l3.54-3.56 3.54 3.56c0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28c0.38-0.4 0.38-1.040 0-1.42l-3.54-3.54z">
+                    </path>
+                </svg>
+
+                <form action="/login" method="post">
+
+                    <div>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+
+                    <div>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+
+                    <div>
+                        <button type="submit">Login</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="partnerWithZomato">
+            <div>
+                <p></p>
+                <h1>Why should you partner with Zomato?</h1>
+                <p></p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://b.zmtcdn.com/data/o2_assets/546cc9c88402b3bc3b2980137b157d0a1724921700.png"
+                        alt="">
+                    <h2>Attract new customers</h1>
+                        <p>Reach the millions of people ordering on Zomato</p>
+                </div>
+                <div>
+                    <img src="https://b.zmtcdn.com/data/o2_assets/91fdfc547485f6d3c09ba49a925d5ccd1724921680.png"
+                        alt="">
+                    <h2>Doorstep delivery convenience</h2>
+                    <p>Easily get your orders delivered through our trained delivery partners</p>
+                </div>
+                <div>
+                    <img src="https://b.zmtcdn.com/data/o2_assets/373ac53fbbcc7eb345fac0ab74df1d921724921640.png"
+                        alt="">
+                    <h2>Hotline support +91 97-38-38-38-38</h2>
+                    <p>On-call support for any issues or growth consultations</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sucessStory">
+            <h1>Restaurant success stories</h1>
+            <div>
+                <div>
+                    <p>Zomato enabled me to restart my operations post-COVID when I had no hope of doing my business
+                        again. I'm grateful to the platform for helping me thrive - my online ordering business has done
+                        so well, it has even taken over my dining business!
+                    </p>
+                    <div>
+                        <img src="https://b.zmtcdn.com/data/o2_assets/f596e23083bcaf7790bd06fa5bdef6641716462699.png"
+                            alt="">
+                        <div>
+                            <p>Arshad Khan</p>
+                            <p class="colorGreyy">Owner - Khushboo biryani,</p>
+                            <p class="colorGreyy">Shillong</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Thanks to Zomato's invaluable support, our startup cloud kitchen has been doing wonders in the
+                        competitive food industry landscape. Their dedication to promoting local businesses and powerful
+                        reporting tools have been instrumental in our success, and we look forward to a long-term
+                        partnership.
+                    </p>
+                    <div>
+                        <img src="https://b.zmtcdn.com/data/o2_assets/f4bbbb9e0496d7772f44d2c0129cb0fb1716462984.png"
+                            alt="">
+                        <div>
+                            <p>Vijay</p>
+                            <p class="colorGreyy">Owner - Birgo</p>
+                            <p class="colorGreyy">Coimbatore</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Zomato helped us grow by 60% since registration, and now, we are one of the biggest vegetarian
+                        joints in Ernakulam city.
+                    </p>
+                    <div>
+                        <img src="https://b.zmtcdn.com/data/o2_assets/ef35a4c36a01ebc1ab78e784986ac4af1716462944.png"
+                            alt="">
+                        <div>
+                            <p>Sandeep K Mohan</p>
+                            <p class="colorGreyy">Owner - Mysore Raman Idli,</p>
+                            <p class="colorGreyy">Kerala</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="frequentlyAskedQuestions">
+            <h1>Frequently asked questions</h1>
+        </div>
+
+        <div class="questions">
+            <div>
+                <p id="Ques1">What are the documents and details required to start deliveries through Zomato?
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                        </path>
+                    </svg>
+                </p>
+                <div class="hide">
+                    <p>To ensure a smooth onboarding experience, please have the following documents ready:</p>
+                    <span>Mandatory documents:</span>
+                    <li><span>PAN card:</span> Only adult PAN cards are accepted.</li>
+                    <li><span>FSSAI license certificate:</span><span class="colorBlue"> Apply now</span></li>
+                    <li><span>Bank details:</span> A copy of your cheque or passbook.</li>
+                    <li><span>Restaurant’s delivery menu</span></li>
+                    <li><span>One food image:</span> Used as your restaurant’s cover image on Zomato.</li>
+                    <span>Optional documents</span>
+                    <li><span>GST certificate:</span> If applicable based on the PAN provided <span class="colorBlue">
+                            Apply now</span></li>
+                </div>
+            </div>
+            <div>
+                <p id="Ques2">How long will it take for a restaurant to go live on Zomato after submitting the
+                    documents?
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                        </path>
+                    </svg>
+                </p>
+                <div class="hide">
+                    <p>Once all mandatory documents are uploaded and the contract is accepted, our team typically takes
+                        around 24 hours to verify the documents and build your menu.</p>
+                    <li>If all documents are correct, your restaurant will be ready to accept orders within 24 hours.
+                    </li>
+                    <li>If any document is rejected, the go-live process will be delayed until you resubmit the correct
+                        documents.</li>
+                </div>
+            </div>
+            <div>
+                <p id="Ques3">What is the one-time onboarding fee? Do I have to pay it at the time of registration?
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                        </path>
+                    </svg>
+                </p>
+                <div class="hide">
+                    <p>The one-time onboarding fee covers administrative, operational, and technical services, including
+                        document verification, menu digitization, quality checks, training on using the Zomato platform,
+                        and
+                        query resolutions.</p>
+
+                    <p>This fee will be deducted from your statement of accounts only after your restaurant goes live on
+                        Zomato and starts receiving online orders.</p>
+                </div>
+            </div>
+            <div>
+                <p id="Ques4">How can I get help and support from Zomato if I get stuck?
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                        </path>
+                    </svg>
+                </p>
+                <div class="hide">
+                    <p>The Zomato team is here to assist you.</p>
+                    <p>You can reach us in two ways:</p>
+                    <li>Call our support helpline at <span class="colorBlue">+91-97-38-38-38-38</span> between 10 AM - 7
+                        PM for immediate
+                        assistance.
+                    </li>
+                    <li>Email us at <span class="colorBlue">merchantonboarding@zomato.com,</span> and we’ll resolve your
+                        query within 6
+                        hours.</li>
+                </div>
+            </div>
+            <div>
+                <p id="Ques5">How much commission will I be charged by Zomato?
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                        </path>
+                    </svg>
+                </p>
+                <div class="hide">
+                    <p>Zomato charges a commission for services such as order placement, catalog hosting, demand
+                        generation, marketing, logistics, tech infrastructure, and customer support.
+                    </p>
+
+                    <p>The commission rates vary based on the city and the restaurant, depending on factors like
+                        location
+                        and cuisine. You can view your specific commission rate when you accept the online ordering
+                        contract.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p id="Ques6">How will I get my payouts?
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                        </path>
+                    </svg>
+                </p>
+                <div class="hide">
+                    <p>Newly registered restaurants on Zomato receive weekly payouts every Wednesday for transactions
+                        made from Monday to Sunday of the previous week. If you prefer daily payouts, you can request
+                        them through the Help Centre on the partner app once your restaurant is live for online
+                        ordering.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="contact">
+            <img src="https://b.zmtcdn.com/data/o2_assets/f7e17618f914e229ba638dd7b18ed3be1715148110.png" alt="">
+            <div>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z">
+                        </path>
+                    </svg><a href="">merchantonboarding@zomato.com</a>
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+                        </path>
+                    </svg><a href="">+91 97-38-38-38-38</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <div>
+                    <p>About Zomato</p>
+                    <a href="">Who We Are</a>
+                    <a href="">Blog</a>
+                    <a href="">Work With Us</a>
+                    <a href="">Investors Relations</a>
+                    <a href="">Report Fraud</a>
+                    <a href="">Press Kit</a>
+                </div>
+                <div>
+                    <p>Zomaverse</p>
+                    <a href="">Zomato</a>
+                    <a href="">Blinkit</a>
+                    <a href="">Feeding India</a>
+                    <a href="">Hyperpure</a>
+                    <a href="">Zomaland</a>
+                    <a href="">Weather Union</a>
+                </div>
+                <div>
+                    <p>For Restaurants</p>
+                    <a href>Partner With Us</a>
+                    <a href>Apps For You</a>
+                </div>
+                <div>
+                    <p>Learn More</p>
+                    <a href>Privacy</a>
+                    <a href>Security</a>
+                    <a href>Terms</a>
+                    <a href>Sitemap</a>
+                </div>
+            </div>
+            <div>
+                <p>Social Links</p>
+                <div>
+                    <img alt="Linkedin" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                        src="https://b.zmtcdn.com/data/o2_assets/28f73656755bf15a62675fbed2e9ced21714991268.png"
+                        style="color: transparent;">
+                    <img alt="Instagram" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                        src="https://b.zmtcdn.com/data/o2_assets/e710c4370e34750d537ee37b9bf4a0041714991325.png"
+                        style="color: transparent;">
+                    <img alt="Twitter" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                        src="https://b.zmtcdn.com/data/o2_assets/b56bb3a09a482d55f7b7dc70c1a60e2d1714991399.png"
+                        style="color: transparent;">
+                    <img alt="Youtube" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                        src="https://b.zmtcdn.com/data/o2_assets/7b253186bdd9f531f074a2f3e9fb3dd11714991378.png"
+                        style="color: transparent;">
+                    <img alt="Facebook" loading="lazy" width="24" height="24" decoding="async" data-nimg="1"
+                        src="https://b.zmtcdn.com/data/o2_assets/6b049a0f6be99c113e4d1453c32281b91714991415.png"
+                        style="color: transparent;">
+                </div>
+                <div>
+                    <img alt="App Store Badge" loading="lazy" width="152" height="50" decoding="async" data-nimg="1"
+                        src="https://b.zmtcdn.com/data/o2_assets/944516e0249a032f5d58350d240419a71711192912.png"
+                        style="color: transparent;">
+                    <img alt="Google Play Badge" loading="lazy" width="152" height="50" decoding="async" data-nimg="1"
+                        src="https://b.zmtcdn.com/data/o2_assets/019683f49055a2d4f80611b462477c0b1711192963.png"
+                        style="color: transparent;">
+                </div>
+            </div>
+        </div>
+
+        <div class="footerPara">
+            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All
+                rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../javascripts/restaurant.js"></script>
+
+</body>
+
+</html>

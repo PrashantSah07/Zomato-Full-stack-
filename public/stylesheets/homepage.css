@@ -1,0 +1,1214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.4px;
+}
+
+.side-Navbar {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100vh;
+    padding: 17px 20px 20px 20px;
+    gap: 70px;
+    font-size: 18px;
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    display: none;
+}
+
+.side-Navbar a {
+    text-decoration: none;
+    color: rgba(39, 37, 37, 0.671);
+}
+
+.side-Navbar li {
+    text-decoration: none;
+    color: rgba(39, 37, 37, 0.671);
+    cursor: pointer;
+}
+
+.side-Navbar div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-Navbar div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 10px;
+}
+
+.header {
+    padding: 10px 0 105px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: filter;
+    transition-duration: 0.1s;
+}
+
+.users {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    width: 45px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.user svg {
+    transition: 0.2s;
+}
+
+.user-img {
+    width: 40px;
+    border-radius: 50px;
+}
+
+#profile-overview {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    animation: top-to-bottom 0.15s linear 1;
+    position: absolute;
+    right: 215px;
+    display: none;
+    top: 60px
+}
+
+#profile-overview a {
+    padding: 14px 90px 8px 10px;
+    color: rgb(28, 28, 28);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#profile-overview a:hover {
+    background-color: rgba(78, 78, 80, 0.121);
+}
+
+#profile-overview2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.133);
+    display: none;
+    animation: left-to-right 0.15s linear 1;
+    position: absolute;
+    left: 90px;
+    top: 250px
+}
+
+#profile-overview2 a {
+    padding: 14px 90px 8px 10px;
+    color: rgb(28, 28, 28);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+#profile-overview2 a:hover {
+    background-color: rgba(78, 78, 80, 0.121);
+}
+
+@keyframes top-to-bottom {
+    from {
+        transform: translateY(-20px);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    to {
+        transform: translateY(0px);
+        background-color: white;
+    }
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(-20px);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    to {
+        transform: translateX(0px);
+        background-color: white;
+    }
+}
+
+.header.dim {
+    filter: brightness(30%);
+}
+
+.main.dim {
+    filter: brightness(30%);
+    background-color: rgba(12, 12, 12, 0.789);
+}
+
+.header>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header #sideNavbar {
+    display: none;
+}
+
+.header h1 {
+    font-size: 4.5em;
+}
+
+.header h2 {
+    font-size: 2.4em;
+    font-weight: 500;
+}
+
+.header .inputSearch {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+
+.header .inputSearch div:first-child {
+    position: relative;
+}
+
+.header .inputSearch div:nth-child(2) {
+    position: relative;
+}
+
+.header input {
+    border-radius: 8px 0 0 8px;
+    border: none;
+    padding: 18px 10px 18px 42px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    word-spacing: 1.4px;
+}
+
+.header #search-restaurant {
+    border-radius: 0px 8px 8px 0px;
+    width: 34vw;
+    padding: 18px 40px 18px 45px;
+}
+
+.header #location-svg {
+    width: 22px;
+    position: absolute;
+    left: 12px;
+    top: 14px;
+}
+
+.header #search-svg {
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    color: rgb(84, 82, 82);
+}
+
+.header li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 210px;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+
+.header nav ul:first-child li {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+#zomatoImg {
+    width: 285px;
+    margin: 7px 0 8px 0;
+}
+
+.signup-form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 17px 22px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    animation: scale 0.15s linear 1;
+    margin: 0 22px;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form svg {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    cursor: pointer;
+}
+
+#signup-center {
+    width: 100vw;
+    position: absolute;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.signup-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signup-form form input {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.signup-form #checkbox {
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7px;
+    margin: 10px 0;
+}
+
+.signup-form #checkbox input {
+    width: 20px !important;
+}
+
+.signup-form span {
+    color: rgb(246, 30, 56);
+}
+
+.signup-form #Create-account {
+    background-color: rgb(253, 57, 73);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#log-in {
+    z-index: 5;
+}
+
+#login-center {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+    display: none;
+}
+
+.login-form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 17px 22px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    animation: scale 0.15s linear 1;
+    margin: 0 22px;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.login-form #login-cut {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    cursor: pointer;
+}
+
+.login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form form input {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    background-color: rgb(253, 57, 73);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.main {
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center;
+    gap: 20px;
+    transition: filter;
+    transition-duration: 0.1s;
+}
+
+.main img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.main>div {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main>div:hover {
+    transform: scale(1.04);
+}
+
+
+.main>div div {
+    border: 1px solid rgba(128, 128, 128, 0.358);
+    display: flex;
+    flex-direction: column;
+    padding: 13px 15px;
+    gap: 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
+
+.main2 .collections {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main2 .collections div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main2 .bgimg {
+    display: flex;
+    gap: 13px;
+}
+
+
+.main2 .bgimg div {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 320px;
+    border-radius: 10px;
+    justify-content: flex-end;
+    padding: 10px 10px;
+    gap: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.main2 .bgimg div p {
+    color: rgb(255, 255, 255);
+}
+
+.main2 .bgimg div:nth-child(1) {
+    background-image: url('https://b.zmtcdn.com/data/collections/96541881ed7b42d424990403ac3afdbf_1712923159.png?output-format=webp');
+}
+
+.main2 .bgimg div:nth-child(2) {
+    background-image: url('https://b.zmtcdn.com/data/collections/1abd83e8e4dfd12c6f5f10e2372a31b7_1709810540.png?output-format=webp');
+}
+
+.main2 .bgimg div:nth-child(3) {
+    background-image: url('https://b.zmtcdn.com/data/collections/6922d49fb675d0490edb652abf5ca45f_1727171297.png?output-format=webp');
+}
+
+.main2 .bgimg div:nth-child(4) {
+    background-image: url('https://b.zmtcdn.com/data/collections/5cbe9bc87c9da2c6954772540d2e5db5_1730709922.png?output-format=webp');
+}
+
+.heading {
+    width: 1160px;
+    margin: 90px auto 30px auto;
+}
+
+.heading h1 {
+    font-weight: 500;
+    font-size: 38px;
+    color: rgba(18, 18, 18, 0.847);
+}
+
+.indore-locations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 175px 120px 175px;
+    gap: 20px 20px;
+}
+
+.indore-locations div {
+    /* width: 375px; */
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.841);
+    cursor: pointer;
+}
+
+.indore-locations div:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.1s;
+}
+
+.indore-locations .see-more {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.indore-locations .see-more svg {
+    width: 20px;
+}
+
+.indore-locations .hide-location {
+    display: none;
+}
+
+.zomato-app {
+    display: flex;
+    justify-content: center;
+    background-color: #fffbf7;
+}
+
+.zomato-app .email-phone {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    height: 30px;
+}
+
+.zomato-app .email-phone div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.zomato-app input {
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.zomato-app #eml {
+    width: 300px;
+    font-size: 17px;
+}
+
+.zomato-app button {
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(249, 40, 74);
+    cursor: pointer;
+}
+
+.zomato-app div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 17px;
+    padding: 40px 0;
+}
+
+.zomato-app div:nth-child(4) {
+    display: flex;
+    gap: 6px;
+}
+
+
+.zomato-app div:nth-child(2) h1 {
+    font-size: 43px;
+    font-weight: 500;
+}
+
+.zomato-app #phone-img {
+    width: 450px;
+}
+
+.zomato-app div img {
+    width: 140px;
+}
+
+.explore-options {
+    width: 75vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.explore-options>p {
+    font-size: 30px;
+}
+
+.explore-options div {
+    border: 1px solid rgba(37, 36, 36, 0.225);
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    font-size: 18px;
+    border-radius: 10px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.explore-options ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px 20px 20px;
+    list-style-position: inside;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.441);
+    display: none;
+}
+
+.explore-options .restaurant-chains {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    display: none;
+}
+
+.explore-options .all-cities {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 27px;
+    display: none;
+}
+
+.explore-options div p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px 20px 25px 20px;
+    border-radius: 10px;
+}
+
+.explore-options div p svg {
+    transition: 0.5s;
+}
+
+.explore-options svg {
+    width: 20px;
+}
+
+.setLanguage {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 190px;
+    background-color: rgb(248 248 248);
+    position: relative;
+}
+
+.zomato-img {
+    width: 130px !important;
+    height: 27px !important;
+}
+
+.setLanguage>div {
+    display: flex;
+    gap: 15px;
+    padding: 0 0;
+}
+
+.setLanguage>div div {
+    border: 1px solid rgba(20, 20, 21, 0.768);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.setLanguage img {
+    width: 20px;
+    height: 17px;
+}
+
+.setLanguage .setCountry {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+    padding: 10px 60px 20px 15px;
+    position: absolute;
+    right: 280px;
+    top: -25px;
+    display: none;
+}
+
+.setLanguage .setCountry>div {
+    border-radius: 0;
+    display: flex;
+    gap: 15px;
+    border: none;
+    transition: 0.2s;
+}
+
+.setLanguage .setCountry>div:nth-child(1) {
+    padding-right: 40px;
+    background-color: rgb(215, 227, 253);
+}
+
+.setLanguage .setCountry>div:nth-child(2) {
+    padding-right: 40px;
+}
+
+.setLanguage .setCountry>div:nth-child(2):hover {
+    background-color: rgba(239, 235, 235, 0.74);
+}
+
+.setLanguage .setLang {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    gap: 0;
+    position: absolute;
+    top: -400px;
+    right: 200px;
+    background-color: white;
+    display: none;
+}
+
+.setLanguage .setLang p {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 0 0 0 5px;
+    cursor: pointer;
+}
+
+.setLanguage .setLang p:hover {
+    background-color: rgba(239, 235, 235, 0.74);
+}
+
+.setLanguage .setLang p:first-child {
+    background-color: rgb(215, 229, 252);
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px 190px 50px 190px;
+    font-size: 18px;
+    background-color: rgb(248 248 248);
+}
+
+.footer a {
+    color: rgba(30, 29, 29, 0.711);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer img {
+    width: 135px;
+    cursor: pointer;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer div:nth-child(5) div {
+    display: flex;
+    flex-direction: row;
+}
+
+.foot-para {
+    background-color: rgb(248 248 248);
+}
+
+.foot-para p {
+    margin: 0 190px;
+    padding: 30px 0px;
+    color: rgba(45, 44, 44, 0.656);
+    font-size: 13.5px;
+    font-weight: 100;
+    border: 0px solid rgba(108, 108, 108, 0.432);
+    border-top-width: 1px;
+}
+
+@media only screen and (max-width:1405px) {
+    .indore-locations {
+        padding: 0 100px 120px 100px;
+    }
+
+    .explore-options {
+        width: 80vw;
+    }
+
+    .setLanguage {
+        padding: 50px 140px;
+    }
+
+    .footer {
+        padding: 0px 140px 50px 140px;
+    }
+
+    .foot-para p {
+        margin: 0 140px;
+    }
+
+    .setLanguage .setCountry {
+        right: 240px;
+    }
+
+    .setLanguage .setLang {
+        right: 150px;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .header nav {
+        padding: 0 35px;
+    }
+
+    .indore-locations {
+        padding: 0 20px 120px 20px;
+    }
+
+    .explore-options {
+        width: 96.5vw;
+    }
+
+    .setLanguage {
+        padding: 50px 20px;
+    }
+
+    .footer {
+        padding: 0px 20px 50px 20px;
+    }
+
+    .foot-para p {
+        margin: 0 20px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 50px 20px;
+    }
+
+    .main>div {
+        width: 100%;
+    }
+
+    .main2 .bgimg {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100vw;
+        padding: 0 20px;
+    }
+
+    .main2 .bgimg div {
+        width: 100%;
+    }
+
+    .main2 .collections {
+        width: 100vw;
+        padding: 0 20px;
+    }
+
+    .heading {
+        width: 100vw;
+        padding: 0 20px;
+    }
+
+    .zomato-app {
+        padding: 0 25px;
+    }
+
+    .zomato-app #phone-img {
+        width: 400px;
+    }
+
+    #signup-center {
+        top: 15px;
+    }
+
+    .setLanguage .setCountry {
+        right: 140px;
+    }
+
+    .setLanguage .setLang {
+        right: 45px;
+    }
+
+    #profile-overview {
+        right: 38px;
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    .header #search-restaurant {
+        width: 50vw;
+    }
+
+    .header nav ul {
+        gap: 20px;
+    }
+
+    .zomato-app {
+        align-items: center;
+    }
+
+    .zomato-app #eml {
+        width: 260px;
+    }
+
+    .zomato-app #phone-img {
+        width: 300px;
+    }
+
+    .zomato-app div:nth-child(2) h1 {
+        font-size: 38px;
+    }
+
+    .header h2 {
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .setLanguage {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .setLanguage .setCountry {
+        left: 160px;
+        top: 38px;
+        width: 320px;
+    }
+
+    .setLanguage .setLang {
+        left: 170px;
+        top: -340px;
+        width: 175px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 25px 50px 25px;
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+
+    .header {
+        padding: 12px 0 105px
+    }
+
+    .header nav {
+        padding: 0 35px 0 22px;
+    }
+
+    #zomatoImg {
+        margin: 0px 0 8px 0;
+    }
+
+    .side-Navbar {
+        display: flex;
+    }
+
+    .header .displayNone {
+        border: 2px solid black;
+        display: none;
+    }
+
+    .header #sideNavbar {
+        display: flex;
+        width: 25px;
+    }
+
+    .header>div {
+        margin-top: 65px;
+    }
+
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main2 .bgimg {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .zomato-app div:nth-child(4) {
+        flex-direction: column;
+    }
+
+    .zomato-app #phone-img {
+        width: 250px;
+    }
+
+    .zomato-app div:nth-child(2) h1 {
+        font-size: 33px;
+    }
+
+    .zomato-app div img {
+        width: 115px;
+    }
+
+    .main2 .collections div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .explore-options .restaurant-chains {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .explore-options .all-cities {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .heading h1 {
+        font-size: 32px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .zomato-app #phone-img {
+        width: 200px;
+    }
+
+    .zomato-app div:nth-child(2) h1 {
+        font-size: 30px;
+    }
+
+    .explore-options ul {
+        gap: 20px;
+    }
+
+    .explore-options .restaurant-chains {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .explore-options .all-cities {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    #zomatoImg {
+        width: 250px;
+    }
+
+    .zomato-app #phone-img {
+        display: none;
+    }
+
+    .indore-locations p {
+        font-size: 15px;
+    }
+
+    .explore-options {
+        margin: 0;
+        padding: 0 25px;
+    }
+
+    .explore-options {
+        width: 100vw;
+    }
+
+    .header .inputSearch div:first-child {
+        width: 130px;
+    }
+
+    .header input {
+        padding: 18px 0px 18px 42px;
+        width: 130px;
+    }
+
+    .header h2 {
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    .header h1 {
+        font-size: 4em;
+    }
+
+    .setLanguage .setCountry {
+        left: 65px;
+        top: 38px;
+    }
+
+    .setLanguage .setLang {
+        left: 150px;
+    }
+
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main2 .bgimg {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .indore-locations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .explore-options .restaurant-chains {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .explore-options .all-cities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:350px) {
+
+    #zomatoImg {
+        width: 230px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .setLanguage .setCountry {
+        left: 19px;
+        top: 38px;
+        width: 277px;
+    }
+
+    .setLanguage .setLang {
+        left: 80px;
+    }
+
+    .explore-options .restaurant-chains {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .explore-options .all-cities {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
