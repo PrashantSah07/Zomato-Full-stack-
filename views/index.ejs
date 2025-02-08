@@ -159,6 +159,12 @@
       <form action="/login" method="post">
 
         <div>
+          <% if (error.length>0) { %>
+            <p class="error" style="color: red; font-weight: bold;"><%= error %></p>
+          <% } %>          
+        </div>
+
+        <div>
           <input type="text" id="username" name="username" placeholder="Username" required>
         </div>
 

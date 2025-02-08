@@ -7,7 +7,7 @@ passport.use(new localStrategy(userModel.authenticate()));
 
 
 router.get('/', function (req, res) {
-  res.render('index');
+  res.render('index', { error: req.flash('error') });
   passport.authenticate('local')(req, res, function () {
     res.redirect('/homepage')
   });
@@ -53,7 +53,8 @@ router.post('/register', function (req, res) {
 
 router.post('/login', passport.authenticate('local', {
   successRedirect: '/homepage',
-  failureRedirect: '/'
+  failureRedirect: '/',
+  failureFlash: true
 }), function (req, res) { })
 
 router.get('/logout', function (req, res, next) {
