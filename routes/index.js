@@ -45,6 +45,10 @@ router.post('/register', function (req, res) {
         res.redirect('/homepage');
       });
     })
+
+    .catch(function (error) {
+      res.send('Username already exists');
+    })
 });
 
 router.post('/login', passport.authenticate('local', {
