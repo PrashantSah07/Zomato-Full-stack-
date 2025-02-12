@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const plm = require('passport-local-mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/authentication');
+// mongoose.connect('mongodb://127.0.0.1:27017/authentication');
+mongoose.connect('mongodb+srv://PrashantSah:mongo%40123@cluster0.ssllk.mongodb.net/authentication?retryWrites=true&w=majority&appName=Cluster0');
 
 const userSchema = mongoose.Schema({
   username: String,
@@ -15,4 +16,4 @@ const userSchema = mongoose.Schema({
 
 userSchema.plugin(plm);
 
-module.exports = mongoose.model('user', userSchema);
+module.exports = mongoose.model('user', userSchema);  
